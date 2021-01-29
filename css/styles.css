@@ -1,10 +1,13 @@
 * {
 	box-sizing: border-box;
+	font-family: 'Coda Caption', cursive;
 }
 
 body, html {
 	min-height: 100vh;
 	margin: 0;
+	font-size: 12px;
+	background-color: rgb(241,247,237);
 }
 
 header {
@@ -12,6 +15,7 @@ header {
 	padding: 30px;
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 img {
@@ -38,6 +42,19 @@ nav ul {
 	grid-gap: 30px;
 }
 
+a {
+	text-decoration: none;
+	color: #00cf00;
+	/*Stroke effect from stack overflow: https://stackoverflow.com/questions/4919076/outline-effect-to-text*/
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+	transition: 0.3s;
+}
+
+a:hover {
+	color: red;
+	transition: 0.3s;
+}
+
 .grid-parent {
 	display: grid;
 	grid-template-columns: 200px 200px;
@@ -46,9 +63,9 @@ nav ul {
 }
 
 .logo {
-background-image: url(../imgs/);
+	background: url(../imgs/logo.png);
 	width: 40px;
-	height: 40px
+	height: 40px;
 	background-size: 100%;
 	padding: 30px;
 }
@@ -56,3 +73,17 @@ background-image: url(../imgs/);
 .credits {
 	text-align: right;
 }
+
+
+.joke {
+	font-size: 20px;
+	font-size: 20px;
+	transition: 0.5s;
+}
+
+.joke:hover {
+	cursor: url(../imgs/smily.png), auto;
+	font-size: 28px;
+	transition: 0.5s;
+}
+
